@@ -1,1 +1,33 @@
-[![](https://mermaid.ink/img/pako:eNp9k29vmzAQxr8K8qtMIlHIHxLQVKnKNKnSVlVbtRcTb674CtbAh8521CXLd58DJGWjG2_M2c_d_Z7DHEVOEkUq8gqM-aCgYKgzHfjnrilJYzCd_roJvmDDJJ0l_uyMyqEaS24bYKxKesQKn0mrnMaae9hjAZL4TltkjTbTnajtPu5y7E6DYPpJGfv-q2Wli5ugbk_PW3Ap4CWWcuDJu2vcgDN_bBhPlivS0JefdPX6cr3uNAQae_oHUU7agqUe6S0FY47e9K4Tmv8o8xJqkPCALJUE87fNShXeVY-uXY1MrxbBopY4NK08tQLeETMq-kaHyVtGRx_m6vOy9g0dVx9hT6wsmAEUvqgnxQ9QKH0dq5cOwKTqRn9Pe7h9gsmQ2UGlDnBJf-UToShYSZFadhgKb7WGcyhaukzYEmvMROpfJfCPTGT65HMa0N-J6ksakytKkT5DZXzkGumH1F_0q6Sd2o6ctiKN120JkR7Fi0ijZTzbRMl6lczXmzhZJ0kofoo0SWbz7WIVrRbbzWKTRNEpFIe26XwWJ6tlvFhG2-U83sRRFAqU6nyp-z_tvJx-Ax5_HgY?type=png)](https://mermaid.live/edit#pako:eNp9k29vmzAQxr8K8qtMIlHIHxLQVKnKNKnSVlVbtRcTb674CtbAh8521CXLd58DJGWjG2_M2c_d_Z7DHEVOEkUq8gqM-aCgYKgzHfjnrilJYzCd_roJvmDDJJ0l_uyMyqEaS24bYKxKesQKn0mrnMaae9hjAZL4TltkjTbTnajtPu5y7E6DYPpJGfv-q2Wli5ugbk_PW3Ap4CWWcuDJu2vcgDN_bBhPlivS0JefdPX6cr3uNAQae_oHUU7agqUe6S0FY47e9K4Tmv8o8xJqkPCALJUE87fNShXeVY-uXY1MrxbBopY4NK08tQLeETMq-kaHyVtGRx_m6vOy9g0dVx9hT6wsmAEUvqgnxQ9QKH0dq5cOwKTqRn9Pe7h9gsmQ2UGlDnBJf-UToShYSZFadhgKb7WGcyhaukzYEmvMROpfJfCPTGT65HMa0N-J6ksakytKkT5DZXzkGumH1F_0q6Sd2o6ctiKN120JkR7Fi0ijZTzbRMl6lczXmzhZJ0kofoo0SWbz7WIVrRbbzWKTRNEpFIe26XwWJ6tlvFhG2-U83sRRFAqU6nyp-z_tvJx-Ax5_HgY)
+Diagrama das funcionalidades do Iphone:
+
+```mermaid
+classDiagram
+    Iphone --|> ReprodutorMusical
+    Iphone --|> AparelhoTelefonico
+    Iphone --|> NavegadorInternet
+
+    class ReprodutorMusical{
+      -List<String> musicaLista
+
+      -tocar()
+      -pausar()
+      -selecionarMusica(String musica)
+    }
+    class AparelhoTelefonico{
+      -List<String> contatoLista
+      -List<String> recenteContatosLista
+      -List<String> chamadaPerdidasLista
+
+      -ligar(String numero)
+      -atender()
+      -iniciarCorreioVoz()
+    }
+    class NavegadorInternet{
+      
+      String urlFavoritas
+
+      -exibirPagina(String url)
+      -adicionarNovaAba()
+      -atualizarPagina()
+    }
+```
